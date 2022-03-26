@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pop Up App</title>
+</head>
+<body>
+<h1>Ini adalah aplikasi pop up</h1>
+<script>
+   const masuk = confirm("Anda yakin mau masuk situs berbahaya ini???")
+   if(masuk){
+      let name = prompt("Siapakah anda?");
+      if(name=="aura"){
+         alert(`Hello ${name}! selamat datang di website saya`) ;
+      }
+      else{
+         alert(`Mohon maaf pak/bu ${name}, karena anda bukan aura maka tidak boleh masuk`);
+      }
+   }
+
+</script>
+</body>
+</html>
