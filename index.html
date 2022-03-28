@@ -2,22 +2,107 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Pop Up App</title>
+    <title>My Journey</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-color:#ECDBBA;
+            color:black;
+            padding:10px;
+        }
+        h1{
+            width: fit-content;
+        }
+        .row{
+            /*content:"";*/
+            /*display: table;*/
+            /*clear: both;*/
+            width: 75%;
+            margin-top: 40px;
+        }
+
+
+        ul{
+            overflow: hidden;
+            padding: 0;
+            background-color:#2D4263;
+            color:white;
+        }
+        li{
+            display:block;
+            padding: 14px 16px;
+            float:left;
+            border-right:1px solid;
+        }
+        table, th, td {
+            border: black solid 2px;
+            padding: 7px;
+            border-collapse: collapse;
+            font-style: bold;
+            font-size: large;
+        }
+
+    </style>
 </head>
 <body>
-<h1>Ini adalah aplikasi pop up</h1>
-<script>
-   const masuk = confirm("Anda yakin mau masuk situs berbahaya ini???")
-   if(masuk){
-      let name = prompt("Siapakah anda?");
-      if(name=="aura"){
-         alert(`Hello ${name}! selamat datang di website saya`) ;
-      }
-      else{
-         alert(`Mohon maaf pak/bu ${name}, karena anda bukan aura maka tidak boleh masuk`);
-      }
-   }
+<h1  onmouseover="mOver(this)" onmouseout="mOut(this)">This is <M></M>y journey</h1>
+<ul>
+    <li>Home</li>
+    <li>Contact Me</li>
+    <li>About Me</li>
+    <li style="float: right">Hack Me</li>
+</ul>
+<table class="row">
+    <tr>
+        <th>Timestamp</th>
+        <th>Title</th>
+        <th colspan="3">Action</th>
+    </tr>
+    <tr>
+        <td id="date"></td>
+        <td>I'm start to (learn) writing english-content</td>
+        <td>view</td>
+        <td>download</td>
+        <td>raw</td>
+    </tr>
 
-</script>
+    <tr>
+        <td>2021-03-29T09:09AM</td>
+        <td>Yeah, I want to learning Machine Learning too</td>
+        <td>view</td>
+        <td>download</td>
+        <td>raw</td>
+    </tr>
+    <tr>
+        <td>2021-04-01T010:09AM</td>
+        <td>What the hell, machine learning is too complicated for me</td>
+        <td>view</td>
+        <td>download</td>
+        <td>raw</td>
+    </tr>
+    <tr>
+        <td>2021-04-02T08:09AM</td>
+        <td>Hi guys, I want to try cyber security</td>
+        <td>view</td>
+        <td>download</td>
+        <td>raw</td>
+    </tr>
+
+
+</table>
 </body>
+<script>
+    // const d = new Date();
+    // document.getElementById("date").innerHTML = d;
+
+    function mOver(obj){
+       obj.innerHTML = "Not Really";
+    }
+
+    function mOut(obj){
+       obj.innerHTML = "This is My Journey";
+    }
+</script>
 </html>
