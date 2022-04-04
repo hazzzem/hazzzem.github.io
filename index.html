@@ -1,106 +1,45 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Journey</title>
-    <style>
-        *{
-            box-sizing: border-box;
-        }
-        body{
-            background-color:#ECDBBA;
-            color:black;
-            padding:10px;
-        }
-        h1{
-            width: fit-content;
-        }
-        .row{
-            /*content:"";*/
-            /*display: table;*/
-            /*clear: both;*/
-            width: 75%;
-            margin-top: 40px;
-        }
-
-
-        ul{
-            overflow: hidden;
-            padding: 0;
-            background-color:#2D4263;
-            color:white;
-        }
-        li{
-            display:block;
-            padding: 14px 16px;
-            float:left;
-            border-right:1px solid;
-        }
-        table, th, td {
-            border: black solid 2px;
-            padding: 7px;
-            border-collapse: collapse;
-            font-style: bold;
-            font-size: large;
-        }
-
-    </style>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Website Sederhana</title>
+    <link rel="stylesheet" href="css5.css">
 </head>
 <body>
-<h1  onmouseover="mOver(this)" onmouseout="mOut(this)">This is <M></M>y journey</h1>
-<ul>
-    <li>Home</li>
-    <li>Contact Me</li>
-    <li>About Me</li>
-    <li style="float: right">Hack Me</li>
-</ul>
-<table class="row">
-    <tr>
-        <th>Timestamp</th>
-        <th>Title</th>
-        <th colspan="3">Action</th>
-    </tr>
-    <tr>
-        <td>2020-04-2T09:08AM</td>
-        <td>I'm start to (learn) writing english-content</td>
-        <td>view</td>
-        <td>download</td>
-        <td>raw</td>
-    </tr>
+<div class="container">
+    <div class="header">
+        <div class="judul">My Website</div>
+        <div class="navbar">
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">products</a></li>
+                <li><a href="#">services</a></li>
+                <li><a href="#">contacts</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="gambar">
+    </div>
+    <div class="content">
+        <div class="judul2">
+            <h2>Judul Artikel</h2>
+            <h5>ditulis oleh <a href="#">hadzami setiawan</a> pada 4 April 2022</h5>
+        </div>
 
-    <tr>
-        <td>2021-03-29T09:09AM</td>
-        <td>Yeah, I want to learning Machine Learning too</td>
-        <td>view</td>
-        <td>download</td>
-        <td>raw</td>
-    </tr>
-    <tr>
-        <td>2021-04-01T010:09AM</td>
-        <td>What the hell, machine learning is too complicated for me</td>
-        <td>view</td>
-        <td>download</td>
-        <td>raw</td>
-    </tr>
-    <tr>
-        <td>2021-04-02T08:09AM</td>
-        <td>Hi guys, I want to try cyber security</td>
-        <td>view</td>
-        <td>download</td>
-        <td>raw</td>
-    </tr>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec enim non magna consectetur vulputate et eu nibh. In hac habitasse platea dictumst. Aenean porttitor sapien ex, et pretium justo luctus sit amet. Aenean faucibus in tellus et imperdiet. Vestibulum eu sagittis felis, eu ultricies est. Vestibulum hendrerit vehicula risus et condimentum. Curabitur quis mi in sapien aliquam maximus. Pellentesque cursus, urna ac accumsan congue, ipsum dui cursus velit, nec pellentesque diam arcu in augue. Vestibulum porttitor, libero sit amet finibus auctor, neque lectus euismod metus, quis blandit nisi nisl id risus. Cras eu velit non diam feugiat hendrerit. In hac habitasse platea dictumst. In convallis lorem eu mauris pulvinar vulputate.</p>
+
+        <p>Nunc tempor metus a nisi tincidunt tristique. Pellentesque lorem lectus, aliquam id consequat in, accumsan vel nisi. Praesent tincidunt, orci et bibendum eleifend, urna lacus dictum arcu, vel volutpat ante urna nec mi. Nunc pulvinar leo ac tortor aliquam ullamcorper. Pellentesque quis dapibus libero. Curabitur vitae ultricies justo. Etiam venenatis tortor eleifend quam congue, a tincidunt sem finibus. Sed a erat lorem. Vestibulum cursus erat sit amet ipsum efficitur, id sollicitudin elit tincidunt. Praesent lobortis, eros nec vulputate varius, magna eros feugiat mauris, et mattis purus dui ac ex. Cras eu mattis risus. Donec id felis libero. Donec consequat risus sed hendrerit vulputate.</p>
+
+        <p>Phasellus consectetur, sem ac sodales tincidunt, dolor turpis volutpat augue, at vehicula felis risus in odio. Curabitur malesuada ultrices consectetur. Pellentesque condimentum orci aliquam tempus mattis. Curabitur congue nisl augue, quis placerat felis gravida a. Nulla vehicula tempus tortor, vel pharetra neque condimentum sed. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce quis fermentum eros. Aenean elementum orci purus, id elementum mi euismod vel. Curabitur volutpat dolor nulla, eu vestibulum metus porttitor sollicitudin. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla id justo nec nisl finibus tincidunt sed non lectus. Donec sem erat, facilisis id pellentesque a, mollis nec nisi. Nulla rhoncus facilisis porta.</p>
+
+    </div>
+    <div class="footer">Copyright 2022 hadzami setiawan all rights reserved</div>
+</div>
 
 
-</table>
 </body>
-<script>
-  
-    function mOver(obj){
-       obj.innerHTML = "Not Really";
-    }
-
-    function mOut(obj){
-       obj.innerHTML = "This is My Journey";
-    }
-</script>
 </html>
